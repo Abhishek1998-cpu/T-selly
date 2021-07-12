@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- <link rel="stylesheet" href="./Index.css" /> -->
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+      * {
+        background-color: lightgreen;
+        font-family: "Poppins", sans-serif;
+      }
+
+      .Container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+      }
+
+      table,
+      th,
+      td {
+        border: 1px solid black;
+        padding: 10px;
+        border-color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="Container">
+      <h2>Registration Form</h2>
+      <p>I want to <a href="/login" style="text-decoration: none">Login</a></p>
+      <form method="POST" action="/reg">
+        <table>
+          <tr>
+            <td align="center">Name :</td>
+            <td align="center">
+              <input type="text" id="name" name="name" required />
+            </td>
+          </tr>
+          <tr>
+            <td align="center">Email :</td>
+            <td align="center">
+              <input type="email" name="email" id="email" required />
+            </td>
+          </tr>
+          <tr>
+            <td align="center">Password :</td>
+            <td align="center">
+              <input type="password" name="password" id="password" required />
+            </td>
+          </tr>
+          <tr align="center">
+            <td align="center">
+              <button type="submit" value="Submit" name="submit">SUBMIT</button>
+            </td>
+          </tr>
+        </table>
+      </form>
+    </div>
+  </body>
+</html>
