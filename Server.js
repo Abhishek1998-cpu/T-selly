@@ -23,6 +23,10 @@ App.get("/reg", (req, res) => {
   res.render("Reg.ejs");
 });
 
+App.get("/login", (req, res) => {
+  res.render("Login.ejs");
+});
+
 App.post("/login", (req, res) => {
   if (req.body.username == "admin" && req.body.password == 123) {
     res.redirect("/homepage");
